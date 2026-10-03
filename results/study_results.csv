@@ -1,0 +1,6 @@
+scenario,growth_pct,total_MW,total_Mvar,normal_transformer_loading_pct,n1_surviving_transformer_loading_pct,n1_surviving_transformer_MVA,post_contingency_voltage_pu,thermal_result,notes
+Base case,0.0,40.0,13.15,42.8,87.24,43.62,0.96529,PASS,Either T1 or T2 out; 34.5-kV bus tie closed.
++10% load growth,10.0,44.0,14.46,47.16,96.36,48.18,,PASS,No branch MVA violation.
++13.9% load growth,13.9,45.56,14.98,48.91,99.94,49.97,0.95967,PASS - boundary,Approximate practical model boundary; only ~0.03 MVA thermal margin.
++14.0% load growth,14.0,45.6,14.99,,100.04,50.02,,FAIL,Branch MVA limit exceeded.
++15.0% load growth,15.0,46.0,15.12,,100.96,50.48,,FAIL,Branch MVA limit exceeded.
