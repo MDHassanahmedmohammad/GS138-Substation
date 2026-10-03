@@ -1,0 +1,62 @@
+[
+  {
+    "scenario": "Base case",
+    "growth_pct": 0.0,
+    "total_MW": 40.0,
+    "total_Mvar": 13.15,
+    "normal_transformer_loading_pct": 42.8,
+    "n1_surviving_transformer_loading_pct": 87.24,
+    "n1_surviving_transformer_MVA": 43.62,
+    "post_contingency_voltage_pu": 0.96529,
+    "thermal_result": "PASS",
+    "notes": "Either T1 or T2 out; 34.5-kV bus tie closed."
+  },
+  {
+    "scenario": "+10% load growth",
+    "growth_pct": 10.0,
+    "total_MW": 44.0,
+    "total_Mvar": 14.46,
+    "normal_transformer_loading_pct": 47.16,
+    "n1_surviving_transformer_loading_pct": 96.36,
+    "n1_surviving_transformer_MVA": 48.18,
+    "post_contingency_voltage_pu": "",
+    "thermal_result": "PASS",
+    "notes": "No branch MVA violation."
+  },
+  {
+    "scenario": "+13.9% load growth",
+    "growth_pct": 13.9,
+    "total_MW": 45.56,
+    "total_Mvar": 14.98,
+    "normal_transformer_loading_pct": 48.91,
+    "n1_surviving_transformer_loading_pct": 99.94,
+    "n1_surviving_transformer_MVA": 49.97,
+    "post_contingency_voltage_pu": 0.95967,
+    "thermal_result": "PASS - boundary",
+    "notes": "Approximate practical model boundary; only ~0.03 MVA thermal margin."
+  },
+  {
+    "scenario": "+14.0% load growth",
+    "growth_pct": 14.0,
+    "total_MW": 45.6,
+    "total_Mvar": 14.99,
+    "normal_transformer_loading_pct": "",
+    "n1_surviving_transformer_loading_pct": 100.04,
+    "n1_surviving_transformer_MVA": 50.02,
+    "post_contingency_voltage_pu": "",
+    "thermal_result": "FAIL",
+    "notes": "Branch MVA limit exceeded."
+  },
+  {
+    "scenario": "+15.0% load growth",
+    "growth_pct": 15.0,
+    "total_MW": 46.0,
+    "total_Mvar": 15.12,
+    "normal_transformer_loading_pct": "",
+    "n1_surviving_transformer_loading_pct": 100.96,
+    "n1_surviving_transformer_MVA": 50.48,
+    "post_contingency_voltage_pu": "",
+    "thermal_result": "FAIL",
+    "notes": "Branch MVA limit exceeded."
+  }
+]
