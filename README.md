@@ -30,13 +30,12 @@ Develop a conceptual 138/34.5-kV two-transformer substation model and evaluate i
 
 The modeled N-1 thermal boundary is approximately **45.6 MW**, or about **14% above the 40 MW base load**. At +13.9% growth, the surviving transformer carries approximately **49.97 MVA (99.94%)** and the 34.5-kV bus voltage is approximately **0.95967 pu**. In this simplified model, transformer thermal capacity becomes limiting before the selected **0.95 pu** voltage criterion is reached.
 
-![Capacity curve](figures/capacity_curve.webp)
+![Capacity curve](figures/capacity_curve.svg)
 
 ## Base case
 
 At 40 MW total station load, each transformer operates at approximately **42.80%** loading and the 34.5-kV buses are approximately **0.9838 pu**.
 
-![Base case one-line](figures/base_case_one_line.webp)
 
 ## N-1 contingency method
 
@@ -47,7 +46,6 @@ Two symmetrical contingencies were evaluated:
 
 At the base load, either contingency raises the surviving transformer to **87.24%** loading while maintaining service to both bus sections.
 
-![N-1 contingency results](figures/n1_contingency_results.webp)
 
 ## Repository contents
 
@@ -73,3 +71,15 @@ The contingency action includes closing the normally open bus tie after a transf
 ## Engineering takeaway
 
 The base 40 MW condition has substantial N-1 headroom, but the margin decreases quickly with load growth. The model reaches its transformer thermal boundary at approximately 45.6 MW. This demonstrates how load flow, N-1 contingency analysis, and scenario scaling can be combined to support substation capacity planning.
+
+
+## Downloadable source files
+
+The repository includes text-native documentation and result data. Original PowerWorld binary files, the AutoCAD-exported conceptual SLD PDF, detailed screenshots, and PDF/DOCX reports are listed in the repository manifests and can be added through GitHub's web upload interface when binary upload is needed.
+
+See:
+- [PowerWorld model manifest](models/README.md)
+- [Model checksums](models/SHA256SUMS.txt)
+- [Conceptual SLD notes](drawings/README.md)
+- [Technical report (Markdown)](docs/GS138_Substation_Technical_Report.md)
+- [Project brief (Markdown)](docs/GS138_LinkedIn_Project_Brief.md)
