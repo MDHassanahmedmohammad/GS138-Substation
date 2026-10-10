@@ -1,6 +1,8 @@
-# PowerWorld Model Files
+# PowerWorld Files
 
-The following PowerWorld display/case files were supplied for this portfolio study and are intended to live in this folder:
+The supplied files in this project use the `.pwd` extension. In PowerWorld, `.pwd` files are one-line/display files; they are not a substitute for the complete solved `.pwb` case database.
+
+Files supplied for this portfolio:
 
 - `GS138_BASE_30MW.pwd`
 - `GS138_BaseCase.pwd`
@@ -11,13 +13,19 @@ The following PowerWorld display/case files were supplied for this portfolio stu
 - `GS138_T1_Out_40MW.pwd`
 - `GS138_T2_Out_40MW.pwd`
 
-These are original binary PowerWorld files supplied by the project author. The GitHub connector used for this repository can create text files directly, but binary upload is restricted in this chat workflow, so the files should be added to this folder through GitHub's web **Add file > Upload files** interface.
+For a fully reproducible PowerWorld study, also add the matching `.pwb` case file(s) if available and shareable.
 
-## Integrity note
+## Binary upload note
 
-Two pairs of uploaded files are byte-identical based on SHA-256 checksums:
+The GitHub connector used in this chat can create and edit repository text files, but the remaining binary assets are not being accepted through this connector path. Add the `.pwd`, `.pwb`, PDF, PNG, and DOCX assets through GitHub's **Add file > Upload files** interface while preserving the folder structure.
+
+## Integrity check
+
+SHA-256 checking of the supplied files found two byte-identical pairs:
 
 - `GS138_LoadGrowth_+15.pwd` and `GS138_LoadGrowth_13.pwd`
 - `GS138_T1_Out_30MW.pwd` and `GS138_T2_Out_40MW.pwd`
 
-Review those case names in PowerWorld before presenting them as distinct solved cases.
+If these are intended to represent different solved conditions, open them in PowerWorld and verify/save the intended display files before publishing.
+
+See `SHA256SUMS.txt` for all supplied `.pwd` checksums.
