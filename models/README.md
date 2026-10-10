@@ -26,6 +26,6 @@ SHA-256 checking of the supplied files found two byte-identical pairs:
 - `GS138_LoadGrowth_+15.pwd` and `GS138_LoadGrowth_13.pwd`
 - `GS138_T1_Out_30MW.pwd` and `GS138_T2_Out_40MW.pwd`
 
-If these are intended to represent different solved conditions, open them in PowerWorld and verify/save the intended display files before publishing.
+If these are intended to represent different solved conditions, open them in PowerWorld
 
 See `SHA256SUMS.txt` for all supplied `.pwd` checksums.
