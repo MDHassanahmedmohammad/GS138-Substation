@@ -75,7 +75,7 @@ The base 40 MW condition has substantial N-1 headroom, but the margin decreases 
 
 ## Downloadable source files
 
-The repository includes text-native documentation and result data. Original PowerWorld binary files, the AutoCAD-exported conceptual SLD PDF, detailed screenshots, and PDF/DOCX reports are listed in the repository manifests and can be added through GitHub's web upload interface when binary upload is needed.
+The repository includes text-native documentation and result data. Original PowerWorld binary files, the AutoCAD-exported conceptual SLD PDF, detailed screenshots, and PDF/DOCX reports are listed in the repository 
 
 See:
 - [PowerWorld model manifest](models/README.md)
